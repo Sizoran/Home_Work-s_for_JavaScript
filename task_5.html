@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Homework</title>
+</head>
+
+<body>
+  <!--
+Обязательное задание.
+
+Необходимо скопировать и вставить в данный скрипт все функции из 4 задания.
+Необходимо реализовать функцию:
+mathOperation(arg1, arg2, operation);
+Параметры:
+arg1 - первое число.
+arg2 - второе число.
+operation - строка, которая содержит один символ из: "+", "-", "*", "/".
+Функция mathOperation должна вернуть результат операции, который был передан в
+параметр operation для двух первых аргументов (arg1 и arg2).
+Функция mathOperation должна использовать для вычисления функции из 4 задания.
+
+Примеры вызова функции:
+console.log(mathOperation(5, 3, "+")); // 8
+console.log(mathOperation(5, 3, ":)")); // NaN
+
+Функции mathOperation всегда передаются корректные числа, проверки на NaN,
+Infinity делать не нужно, однако, в случае если был передан некорректный
+аргумент в параметр operation, необходимо вернуть NaN.
+
+Необходимо для всех функций прописать комментарии jsdoc https://jsdoc.app/.
+-->
+  <script>
+    "use strict";
+
+    /**
+     * Returns the sum of a and b
+     * @param {number} a
+     * @param {number} b
+     * @returns {number}
+     */
+    function sumNumbers(x, y) {
+      return (x + y)
+    };
+
+    /**
+ * Returns the difference of variables a and b, subtracts the smaller from the larger
+ * @param {number} a
+ * @param {number} b
+ * @returns {number}
+ */
+    function differenceNumbers(x, y) {
+      if (x > y) {
+        return (x - y)
+      }
+      else if (x < y) {
+        return (y - x)
+      }
+      else if (x === y) {
+        return (x - y)
+      }
+    };
+
+    /**
+     * Returns the multiplication of a and b
+     * @param {number} a
+     * @param {number} b
+     * @returns {number}
+     */
+    function multiplicationNumbers(x, y) {
+      return (x * y)
+    };
+
+    /**
+     * Returns the division of a and b
+     * @param {number} a
+     * @param {number} b
+     * @returns {number}
+     */
+    function divisionNumbers(x, y) {
+      return (x / y)
+    };
+    /**
+         * Returns the result of the iteration specified in the operation
+         * @param {number} arg1
+         * @param {number} arg2
+         * @param {string} operation
+         * @returns {number}
+         */
+    function mathOperation(arg1, arg2, operation) {
+      if (operation === "+") {
+        return (sumNumbers(arg1, arg2))
+      }
+      else if (operation === "-") {
+        return (differenceNumbers(arg1, arg2))
+      }
+      else if (operation === "*") {
+        return (multiplicationNumbers(arg1, arg2))
+      }
+      else if (operation === "/") {
+        return (divisionNumbers(arg1, arg2))
+      }
+    };
+
+    console.log(mathOperation(2, 6, "+"));
+    console.log(mathOperation(5, 3, "-"));
+    console.log(mathOperation(5, 5, "-"));
+    console.log(mathOperation(2, 6, "*"));
+    console.log(mathOperation(9, 3, "/"));
+
+  </script>
+</body>
+
+</html>

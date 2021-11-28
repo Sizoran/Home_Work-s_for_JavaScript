@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+
+<body>
+          <script>
+                    "use strict";
+
+                    function PostA(author, text, date) {
+                              this.author = author;
+                              this.text = text;
+                              this.date = date;
+                    };
+                    PostA.prototype.editA = function (newtext) {
+                              this.text = newtext;
+                    };
+
+                    function AttachedPostA(author, text, date, highlighted) {
+                              PostA.call(this, author, text, date);
+                              this.highlighted = false;
+                    };
+
+                    AttachedPostA.prototype = Object.create(PostA.prototype);
+                    AttachedPostA.prototype.constructor = AttachedPostA;
+
+                    AttachedPostA.prototype.makeTextHighlightedA = function () {
+                              this.highlighted = true;
+                    };
+
+                    let obj1 = new PostA('Шекспир', 'Быть или не быть...', '1600-1601');
+                    console.log(obj1);
+                    obj1.editA('Вот в чём вопрос...');
+                    console.log(obj1);
+
+                    let obj2 = new AttachedPostA('Шекспир', 'Чума возьми семейства Ваши оба...', '1595');
+                    console.log(obj2);
+                    obj2.makeTextHighlightedA();
+                    obj2.editA('Я из за Вас стал кормом для червей...');
+                    console.log(obj2);
+
+
+
+                    class PostB {
+                              constructor(author, text, date) {
+                                        this.author = author;
+                                        this.text = text;
+                                        this.date = date;
+                              }
+                              editB(newtext) {
+                                        this.text = newtext;
+                              };
+                    };
+
+                    class AttachedPostB extends PostB {
+                              constructor(author, text, date, highlighted) {
+                                        super(author, text, date);
+                                        this.highlighted = false;
+                              }
+                              makeTextHighlightedB() {
+                                        this.highlighted = true;
+                              };
+                    };
+
+                    let obj3 = new PostB('Пушкин', 'Скажика Дядя, ведь не даром...', '1837');
+                    console.log(obj3);
+                    obj3.editB('Французам отдана была...');
+                    console.log(obj3);
+
+                    let obj4 = new AttachedPostB('Чуковский', 'Как из Маминой из спальни...', '1923');
+                    console.log(obj4);
+                    obj4.makeTextHighlightedB();
+                    obj4.editB('Ололо Пыш Пыш Реальне...');
+                    console.log(obj4);
+
+          </script>
+</body>
+
+</html>

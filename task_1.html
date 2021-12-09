@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Homework</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script type="text/javascript"
+    src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=Zol6tAD88ccdyBUjIuWIM7N_jm_G--Xkka6Qb95kwcZ8LRsz-7H2GYP4eAtjWRijUDU5ChXh7zBMEMalgVDZHzhkTy-qPXkgGJlZdcVqWYueI0b-0wtVpls1vlNLidHBae43oWmRQvi_pMsYQ7jpMrfQs-b0HVy2GOZg83_6r3Hgua9DBOomU9HJzykfzysK1Ccxz9AzJpfy77MPAYw8hu5dfl1QGReq_8uidU1pMn0eqAsJkAiLAQPHge1CPPz-O_U8_47WQfyMzjor-Iy1fwQ6IKptnUC0GdZprCA8tQVFGFR8N8EXV6R1nL-yHj3mx9LNlQZKSgnqN7NsMw1hMF9ePYwMhUR8JYjBHyfU9CnvVwQpiviGYL1hVcJIsQtf-QukCCe0JHGFY9a6N5xdvZ4ODj0ONGZTmt9EPAoTw1BxZVtwUjXomI_fRfEzBLUPlV2g1RXyHhl3MrTwLyy-G6a80JnD2OTM8MvV2UK6NJkNj7AlyW8nQ1aq_lOEjfpB9Ke0qgeRBLst4_FV4U0mrCztMZu3cv074MJ0WMJsge-ZFfB-Y_UmmYXqKNusoSSNCIoYyZ6r8H2axYNLdLIZeglnnaGmA-IPQ6fQ6upYRTQa3nIWjVyXe_ePyJ8xqSOVTlr8tn9N_klJ6wy7p-H717RDJ8a3phKwnuXfvSD0MEmh8Ig-oXbz-ty7khr8iEpjslwNreIwUl3fqec-2YPpY2dWRqAYJciApY9_1HRXlOQjbT7q9LCDtQdwFvS1_oXFT5K1UrU5vDybJu66H2Fdz5k7pNRJyM9IxuEvxxW-bWrPdBdEP14gKm179vbXMp7QC9Q6fVmM-8n-ucVGpbIwejSqCA4XAPDi0UJg3fpcK9yh5AUtDb81KDoU-xfzHB4AHW-YkaUKEaczjiAkjllYt-H3uDbOOzGye17_j6NCzXpOhIg5icd4K3rcEZi-n9NeH5zdOURPnr3y--ve5TzhSdKmRGOPKIAQ3sVeUruv9whPpFiizcQK2T_yC1zyVmqPM_0U9n1_rEMR9acANejam6zOezuR9DhgmJUr3t1-rZ0ASzqt2Fzabo_9YYw0koHiIDF95HNkPK9i5xrwEqtMlGR-sosNno7Tsvtm79HEIaudE_4cAA7xTri9eX9Uxy64_tp2MdXY80VcaMZrQ9q8_gC1tjZ2pdTutBuNudjI3a0"
+    charset="UTF-8"></script>
+  <link rel="stylesheet" crossorigin="anonymous"
+    href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9zMzIxdmxhLnN0b3JhZ2UueWFuZGV4Lm5ldC9yZGlzay85YzY3ZTc1ZmM3ZDYxNmY3NDg4MzY0Mzc1Y2JjOGY2ZTM3NmYzNTI3MmJiYTJmMGY1ODAyOTAzNTE3OTc2MTA5LzYxYWZlNWRkL2pTS1dVVFhqOE90ZzNOVEpKTkNpQVZpR3hVcFUzWEhNcU5CZlNMb0NWcUlvMmdNdlM2TlJwUGJHQ2hhbFFxcEdlcWJlREQ1dnR6Z1FET2Z0Mlpsa2VBPT0_dWlkPTAmZmlsZW5hbWU9MS5odG1sJmRpc3Bvc2l0aW9uPWF0dGFjaG1lbnQmaGFzaD1KdU9FMUhiM0ppYzJ3RE5iNHpFRTZzMDlYQ0VoVnNZaXcwNDlUaVRMTTRhOWFhSlJMeUZiMUlZd1JtVllEeHR0cS9KNmJwbVJ5T0pvblQzVm9YbkRhZyUzZCUzZCUzYS8lRDAlQjQlRDAlQkUlRDAlQkMlRDAlQjAlRDElODglRDAlQkQlRDAlQjUlRDAlQjVfJUQwJUI3JUQwJUIwJUQwJUI0JUQwJUIwJUQwJUJEJUQwJUI4JUQwJUI1LzEuaHRtbCZsaW1pdD0wJmNvbnRlbnRfdHlwZT10ZXh0JTJmaHRtbCZvd25lcl91aWQ9NDE0NjEwMDY4JmZzaXplPTMwMzEmaGlkPTI4YjJlNjFkYWEwMzE0ZmRjNTI3MmQ1YzNiNDUyYmQ5Jm1lZGlhX3R5cGU9ZGV2ZWxvcG1lbnQmdGtudj12MiZydG9rZW49SGM2c3Q2dDFlRzJ5JmZvcmNlX2RlZmF1bHQ9bm8meWNyaWQ9bmEtYjVlYTg3YmRkYmFhNGZkZWJmOWYyZjhlNzRjNGJlNjgtZG93bmxvYWRlcjExaCZ0cz01ZDI5NjNkMmY3MTQwJnM9ZmU4YmVjNWE3YWU2OTk0YTgwOGJjODFkMTNiNTdiY2Q3MGFlMWY2MWE4YTg0MmM1MTQ1ODY1MDY5OTY4ZTNkZSZwYj1VMkZzZEdWa1gxOTROcTgwMEVNb2ZEdkphMGxxT3diY0VGUjNpbzUzanlrXy16UDFmVloyVEZzeFZOUFNMM3FMUGpDS05zWEVPdmkzUHVpOWp1RmFlUDNCM09ORzV0Mkk1SDN0YlFpa09uSQ" />
+  <style>
+    .nav {
+      margin-top: 30px;
+    }
+
+    #inputDiv {
+      font-size: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <!--
+Обязательное задание.
+
+Выполнить все задачи в теге script. Комментарии, в которых написаны задачи, не
+стирать, код с решением задачи пишем под комментарием.
+-->
+  <div class="container">
+    <ul class="nav nav-tabs">
+      <li class="nav-item" data-text="T1">
+        <a class="nav-link active" href="#">Link 1</a>
+      </li>
+      <li class="nav-item" data-text="X6">
+        <a class="nav-link" href="#">Link 2</a>
+      </li>
+      <li class="nav-item" data-text="H99">
+        <a class="nav-link" href="#">Link 3</a>
+      </li>
+    </ul>
+
+    <div class="text">Уверен, ты справишься с этим заданием!</div>
+
+    <input type="range" min="20" max="100">
+    <div id="inputDiv">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, expedita.
+    </div>
+  </div>
+
+  <script>
+    "use strict";
+
+    /*
+    1. Необходимо сделать так, чтобы при клике на элемент с классом "nav-link",
+    данному элементу ставился класс "active", при этом у всхе других элементов с
+    классом nav-link данных элемент отсутствовал, необходимо использовать
+    делегирование события.
+    Также необходимо чтобы в div с классом text ставился нужный текст, который
+    прописан в объекте panelText (вам необходимо определить самостоятельно, что
+    общего между данной в html версткой и объектом ниже).
+    */
+    const panelText = {
+      T1: "Уверен, ты справишься с этим заданием!",
+      X6: "Знаю, программирование это нелегко.",
+      H99: "Однако, программирование, в итоге, принесет свои плоды.",
+    };
+
+    let activeEl = document.querySelector('.active');
+    let textEl = document.querySelector('div.text');
+    let textActiveEl = document.querySelector('.active').parentElement.dataset.text;
+    document.querySelector('.nav-tabs').addEventListener('click', event => {
+      if (!event.target.classList.contains('nav-link')) {
+        return;
+      }
+
+      activeEl.classList.remove('active');
+      event.target.classList.add('active');
+      activeEl = event.target;
+      textActiveEl = document.querySelector('.active').parentElement.dataset.text;
+      console.log(event.target.parentElement);
+      textEl.textContent = panelText[textActiveEl];
+    });
+
+    /*
+    2. Необходимо сделать так, чтобы при изменении input'а менялся и размер шрифта
+    у элемента с id="inputDiv". Перемещение ползунка должно плавно увеличивать
+    шрифт у текста, никакого резкого увеличения шрифта не должно быть при
+    перетаскивании ползунка.
+     */
+
+    const divEl = document.getElementById('inputDiv');
+    const inputEl = document.querySelector('input');
+    inputEl.value = Number.parseInt(getComputedStyle(divEl).fontSize).toString();
+    inputEl.addEventListener('input', event => {
+      divEl.style.fontSize = `${event.target.value}px`;
+    });
+
+  </script>
+</body>
+
+</html>
